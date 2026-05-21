@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Árazás &amp; Bevételi modell — Try Before Pay</title>
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">T</span>
+      <span class="brand-name">Try Before Pay <span class="brand-sub">/ Demo</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">One-pager</a>
+      <a href="problem.html">Probléma</a>
+      <a href="segment.html">Ügyfélszegmens</a>
+      <a href="vision.html">Vízió &amp; Misszió</a>
+      <a href="bmc.html">Business Model Canvas</a>
+      <a href="pricing.html">Árazás</a>
+      <a href="feasibility.html">Megvalósíthatóság</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+  <span class="tag">6. Árazás &amp; bevételi modell</span>
+  <h1 style="margin-top:8px;">Hibrid: fix SaaS + tranzakciós sikerdíj + B2B API</h1>
+  <p class="lead">
+    Kiszámítható havi bevétel + skálázódó tranzakciós bevétel. Egy kereskedőre átlagosan
+    <strong class="accent">€258 / hó</strong> teljes bevétel.
+  </p>
+
+  <section class="grid grid-3">
+    <div class="card">
+      <h3>1) Fix SaaS előfizetés</h3>
+      <div class="stat" style="margin: 10px 0;"><div class="v">€149 / hó</div><div class="l">áruházanként</div></div>
+      <ul class="bullets">
+        <li>Platform hozzáférés &amp; dashboard</li>
+        <li>Onboarding + integráció támogatás</li>
+        <li>Analitika és scoring riport</li>
+      </ul>
+      <p class="note">Fizeti: <strong>Áruház</strong></p>
+    </div>
+    <div class="card">
+      <h3>2) Tranzakciós sikerdíj</h3>
+      <div class="stat" style="margin: 10px 0;"><div class="v">1,5%</div><div class="l">megtartott rendelésre</div></div>
+      <ul class="bullets">
+        <li>Csak <strong>sikeresen megtartott</strong> rendelés után</li>
+        <li>Hitelkockázat-átvállalás díja</li>
+        <li>Skálázódik a kereskedő forgalmával</li>
+      </ul>
+      <p class="note">Fizeti: <strong>Áruház</strong></p>
+    </div>
+    <div class="card">
+      <h3>3) Trust API (B2B)</h3>
+      <div class="stat" style="margin: 10px 0;"><div class="v">€5 / 1k</div><div class="l">scoring hívás</div></div>
+      <ul class="bullets">
+        <li>Külső fintech / insurtech ügyfelek</li>
+        <li>Önálló skálázható bevételi láb</li>
+        <li>Volumen-alapú kedvezmény €50k+ felett</li>
+      </ul>
+      <p class="note">Fizeti: <strong>B2B partner</strong></p>
+    </div>
+  </section>
+
+  <section class="card" style="margin-top: 22px;">
+    <h2>Átlagos kereskedő — modell bontásban</h2>
+    <table>
+      <thead><tr><th>Komponens</th><th>Számítás</th><th>Havi bevétel</th></tr></thead>
+      <tbody>
+        <tr><td>Fix SaaS</td><td>€149 × 1 áruház</td><td>€149</td></tr>
+        <tr><td>Tranzakciós sikerdíj</td><td>~€7 250 GMV megtartott × 1,5%</td><td>€109</td></tr>
+        <tr><td>Trust API attach</td><td>opcionális (~átlag)</td><td>—</td></tr>
+        <tr><td><strong>Átlagos összeg</strong></td><td></td><td><strong class="accent">€258 / hó / shop</strong></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="grid grid-2" style="margin-top: 22px;">
+    <div class="card">
+      <h2>Miért így áraztuk?</h2>
+      <ul class="bullets">
+        <li><strong>Fix SaaS:</strong> fedezi a platform működést és a támogatást — kiszámítható, kötelez az ügyfélre</li>
+        <li><strong>Sikerdíj:</strong> a kockázatvállalás díja, csak akkor fizet a kereskedő, ha mi is „nyertünk”</li>
+        <li><strong>API:</strong> a Trust Score önállóan is értékes — második bevételi láb a fő terméken túl</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Versenytárs viszonyítás</h2>
+      <table>
+        <thead><tr><th>Megoldás</th><th>Díj</th><th>Kockázat</th></tr></thead>
+        <tbody>
+          <tr><td>Klarna (BNPL)</td><td>3–6%</td><td>Vásárlónál (hitel)</td></tr>
+          <tr><td>Klasszikus checkout</td><td>1,4–2,9%</td><td>Kereskedőnél</td></tr>
+          <tr><td><strong>Try Before Pay</strong></td><td><strong class="accent">€149 + 1,5%</strong></td><td><strong class="accent">TBP platformnál</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card" style="margin-top: 22px;">
+    <h2>Unit economics</h2>
+    <div class="grid grid-4" style="margin-top:10px;">
+      <div class="stat"><div class="v">€258</div><div class="l">Átlagos havi ARPU</div></div>
+      <div class="stat"><div class="v">€450</div><div class="l">CAC — beszerzési költség</div></div>
+      <div class="stat"><div class="v">~18 hó</div><div class="l">Átlagos élettartam</div></div>
+      <div class="stat"><div class="v">4,1×</div><div class="l">CLV : CAC</div></div>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Try Before Pay · Kovalik B., Török D., Balla A., Gimes Sz.</footer>
+<script src="assets/nav.js"></script>
+</body>
+</html>
